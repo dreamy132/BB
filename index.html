@@ -2,18 +2,19 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Block Blast Ultimate</title>
+<title>Block Blast Infinity</title>
 <link rel="stylesheet" href="style.css">
 <link rel="manifest" href="manifest.json">
 </head>
 <body>
 
-<h1>Block Blast Ultimate</h1>
+<h1>Block Blast Infinity</h1>
 
 <div id="hud">
   <div>Score: <span id="score">0</span></div>
   <div>High: <span id="high">0</span></div>
   <div>Coins: <span id="coins">0</span></div>
+  <div>Level: <span id="level">1</span></div>
 </div>
 
 <canvas id="game"></canvas>
@@ -21,12 +22,13 @@
 
 <div class="buttons">
   <button onclick="useBomb()">💣 Bomb</button>
-  <button onclick="toggleMusic()">🎵 Music</button>
-  <button onclick="dailyReward()">🎁 Daily</button>
+  <button onclick="openCrate()">💎 Crate</button>
+  <button onclick="showStats()">📊 Stats</button>
 </div>
 
-<script src="game.js"></script>
+<div id="statsPanel" style="display:none;"></div>
 
+<script src="game.js"></script>
 <script>
 if("serviceWorker" in navigator){
   navigator.serviceWorker.register("service-worker.js");
