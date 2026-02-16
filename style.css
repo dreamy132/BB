@@ -1,0 +1,33 @@
+body{
+  margin:0;
+  text-align:center;
+  background:linear-gradient(180deg,#0f2027,#203a43,#2c5364);
+  font-family:sans-serif;
+  color:white;
+}
+
+canvas{
+  background:#111;
+  border-radius:15px;
+  touch-action:none;
+}
+
+#hud{
+  display:flex;
+  justify-content:space-around;
+}
+
+#pieces{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin-top:8px;
+}
+
+button{
+  padding:8px 15px;
+  border:none;
+  border-radius:10px;
+  margin:4px;
+  font-weight:bold;
+}
